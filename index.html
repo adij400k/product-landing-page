@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kiln Pour-Over Dripper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER + NAVIGATION -->
+  <header>
+    <div class="container header-inner">
+      <a href="#product" class="logo">Kiln&amp;Co</a>
+      <button id="menu-button" aria-label="Open menu">☰</button>
+      <nav id="nav">
+        <a href="#product">Product</a>
+        <a href="#details">Details</a>
+        <a href="#enquiry">Enquiry</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO: PRODUCT -->
+  <section id="product" class="container hero">
+    <div class="product-image">
+      <svg viewBox="0 0 400 400" aria-label="Ceramic coffee dripper on a carafe">
+        <rect width="400" height="400" rx="20" fill="#dfe8ec"/>
+        <path d="M120 215h160l-12 130a20 20 0 0 1-20 18H152a20 20 0 0 1-20-18z" fill="#14263a"/>
+        <path d="M268 245h30a22 22 0 0 1 0 60h-22" fill="none" stroke="#14263a" stroke-width="12"/>
+        <path d="M92 110h216l-44 105H136z" fill="#f6f3ee" stroke="#14263a" stroke-width="6"/>
+        <ellipse cx="200" cy="110" rx="108" ry="16" fill="#fff" stroke="#14263a" stroke-width="6"/>
+        <ellipse cx="200" cy="110" rx="86" ry="10" fill="#6b4226"/>
+      </svg>
+    </div>
+
+    <div class="product-info">
+      <h1>Kiln pour-over dripper</h1>
+      <p>A slow-brew dripper made from hand-glazed ceramic. Ridged walls keep water in contact with the coffee, so the cup tastes sweet and clear.</p>
+
+      <p class="price">Price: <span id="unit-price">₹1,499</span></p>
+
+      <!-- Variants: the value of each radio button is its price -->
+      <p class="label">Choose size</p>
+      <div class="sizes">
+        <label><input type="radio" name="size" value="1499" checked> 1 cup</label>
+        <label><input type="radio" name="size" value="1999"> 2 cups</label>
+        <label><input type="radio" name="size" value="2799"> 4 cups</label>
+      </div>
+
+      <!-- Quantity selector -->
+      <p class="label">Quantity</p>
+      <div class="quantity">
+        <button type="button" id="minus">−</button>
+        <span id="quantity">1</span>
+        <button type="button" id="plus">+</button>
+      </div>
+
+      <p class="total">Total: <strong id="total">₹1,499</strong></p>
+      <a href="#enquiry" class="button">Enquire to order</a>
+    </div>
+  </section>
+
+  <!-- DETAILS -->
+  <section id="details" class="container details">
+    <div><h3>Stoneware body</h3><p>Fired at 1,250°C and dishwasher safe.</p></div>
+    <div><h3>Keeps heat</h3><p>Thick walls hold brewing temperature.</p></div>
+    <div><h3>Ships in 3–5 days</h3><p>Packed in drop-tested boxes.</p></div>
+  </section>
+
+  <!-- ENQUIRY FORM -->
+  <section id="enquiry" class="container">
+    <form id="enquiry-form" novalidate>
+      <h2>Ask us about your order</h2>
+
+      <label for="name">Full name</label>
+      <input type="text" id="name">
+      <p class="error" id="name-error"></p>
+
+      <label for="email">Email</label>
+      <input type="email" id="email">
+      <p class="error" id="email-error"></p>
+
+      <label for="phone">Mobile number</label>
+      <input type="tel" id="phone" placeholder="10 digits">
+      <p class="error" id="phone-error"></p>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="4"></textarea>
+      <p class="error" id="message-error"></p>
+
+      <button type="submit" class="button">Send enquiry</button>
+      <p id="success-message"></p>
+    </form>
+  </section>
+
+  <footer>© 2026 Kiln&amp;Co. Demo page.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
